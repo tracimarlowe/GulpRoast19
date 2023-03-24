@@ -1,0 +1,124 @@
+html {
+    box-sizing: border-box;
+ }
+ *, *::before, *::after {
+    box-sizing: inherit;
+ }
+ body {
+    /*background-color: #082B59;*/
+    @include nospace;
+    font-family: $mainfont;
+    line-height: 2;
+  }
+  h1, h2, h3 {
+    font-family: $titlefont;
+  }
+  h1 {
+    //font-size: 2rem;
+    font-size: $h1;
+    margin-bottom: 0;
+  }
+  /* make images flexible */
+  img {
+    max-width: 100%;
+  }
+  a {
+    /*color: #59331d;*/
+    color: $secondcolor;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  header {
+    border-bottom: $borderbottom;
+  }
+
+
+
+  /* establishes a white background */
+  .main-bkgd {
+    background: $mainbckgrcolor url("../Media/Images/gulp-bottom-beans.jpg") repeat-x bottom;
+    padding-bottom: 300px;
+  }
+  
+  .container {
+    margin: 1rem;
+  }
+  
+  .main {
+      margin: 0 auto;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      @include yeswrap;
+    }
+   
+   /*This goes with the title on the Product page.*/
+    .producttitle {
+    @include boxmodel(0, 0.5rem 0 2rem 0);
+
+     // margin: 0;
+     // padding-top: 5rem;
+     // padding-left: 2rem;
+    }
+   
+   
+    .article {
+      justify-content: left;
+      padding: 1rem;
+      display: flex;
+      @include yeswrap; 
+    }
+    .figure {
+      margin: 3rem 0 0 0;
+      border-radius: $imgradius;
+      @include yeswrap;
+    }
+   
+    figure img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  
+    img {
+      margin: 3rem 0 0 0;
+      flex-basis: 25%;
+      border-radius: $imgradius;
+      @include yeswrap;
+      justify-content: center;
+    }
+  
+    .button {
+      display: inline-block;
+      @include buttonstandard;
+    }
+
+    .button:hover {
+      background-color: #f2f2f2;
+      color: #59331d;
+    }
+    footer {
+      color: #f2f2f2;
+      text-align: center;
+    }
+    footer ul {
+      list-style-type: none;
+      @include nospace;
+      display: flex;
+      @include yeswrap;
+      justify-content: center;
+    }
+    footer a {
+      //color: #f2f2f2;
+      color: $navlinkcolor;
+      font-size: 2rem;
+      display: block;
+      margin: 0 1rem 3rem 1rem;
+    }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 0rem 2rem;
+  }

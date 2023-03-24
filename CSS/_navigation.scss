@@ -1,0 +1,99 @@
+html {
+    box-sizing: border-box;
+ }
+ *, *::before, *::after {
+    box-sizing: inherit;
+ }
+//button state
+
+.button {
+  display: inline-block;
+  @include buttonstandard;
+  //background-color: #59331D;
+  //border-radius: 10px;
+  //padding: 0.5rem 1rem;
+  //margin: 0;
+  //color: #f2f2f2;
+  //text-decoration: none;
+  //border: 3px solid #59331d;
+}
+.button:hover {
+  background-color: #f2f2f2;
+  color: #59331d;
+}
+
+
+a {
+      /*color: #59331d;*/
+      color: $secondcolor;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  header {
+    border-bottom: $borderbottom;
+  }
+
+//nested nav bar demonstrates what falls under parent container
+nav {
+    margin: 0 1rem; 
+
+  ul {
+    @include nospace;
+    list-style-type: none;
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+  li {
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1.3rem;
+  }
+  /* max width on the image in pixels */
+  .logo img {
+    max-width: 150px;
+  }
+  /* flex basis on the image container, li */  
+  .logo {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  a {
+    color :$lightcolor;
+    text-decoration: none;
+    display: block;
+    display: block;
+  }
+  a:hover {
+    //color: #d98555;//
+    color: $linkhover;
+  }
+}
+
+
+//footer navigation
+footer {
+  color: #f2f2f2;
+  text-align: center;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+  footer a {
+    color: $navlinkcolor;
+    font-size: 2rem;
+    display: block;
+    margin: 0 1rem 3rem 1rem;
+  }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+  padding: 0rem 2rem;
+}

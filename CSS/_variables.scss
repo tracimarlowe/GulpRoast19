@@ -1,0 +1,58 @@
+//fonts
+$mainfont: Lato, Arial, Helvetica, sans-serif;
+$titlefont: Poppins, Arial, Helvetica, sans-serif;
+
+
+//main colors
+$primarycolor:#082B59;
+$secondcolor: #59331d;
+$lightcolor: #FFFFFF;
+$accentcolor: #D98555;
+$mainbckgrcolor: #ffffff;
+
+//component colors
+
+$bodybckgrcolor: #ffffff;
+$navbckgrcolor: #082B59;
+$navlinkcolor: #f2f2f2;
+$bodytxtcolor: #131D26;
+$bordercolor: #D98555;
+$linkhover: #D98555;
+$buttonhover: #59331d;
+
+$borderbottom: 10px solid #d98555;
+
+//images
+$imgradius: 10px;
+
+
+
+//SASS math scaled fonts//
+$base-font-size: 1rem;
+$scale: 1.25;
+$h5: $base-font-size * $scale;
+$h4: $h5 * $scale;
+$h3: $h4 * $scale;
+$h2: $h3 * $scale;
+$h1: $h2 * $scale;
+
+/*examples of various heading variables
+h5{
+  font-size: $h5;
+}
+
+h4{
+  font-size: $h4;
+}
+
+h3{
+  font-size: $h3;
+}
+
+h2{
+  font-size: $h2;
+}
+
+h1{
+  font-size: $h1;
+}*/

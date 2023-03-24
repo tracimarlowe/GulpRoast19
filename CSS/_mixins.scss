@@ -1,0 +1,32 @@
+@mixin nospace {
+    margin: 0;
+    padding: 0;
+  }
+
+  @mixin yeswrap {
+   flex-wrap: wrap;
+  }
+
+  @mixin nowrap {
+    flex-wrap: nowrap;
+   }
+
+   @mixin flexcenter {
+    display: flex;
+    align-items: center;
+   }
+
+   @mixin buttonstandard {
+    background-color: #59331D;
+    border-radius: $imgradius;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    color: #f2f2f2;
+    text-decoration: none;
+    border: 3px solid #59331d;
+   }
+
+   @mixin boxmodel($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}

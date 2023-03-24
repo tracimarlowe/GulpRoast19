@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+ }
+*, *::before, *::after {
+   box-sizing: inherit;
+}
+
+body {
+   background-color: $primarycolor;
+   @include nospace;
+   font-family: $mainfont;
+   line-height: 2;
+ }
+ h1, h2, h3 {
+   font-family: $titlefont;
+ }
+ h1 {
+   //font-size: 2rem;//
+   font-size: $h1;
+   margin-bottom: 0;
+ }
+ /* make images flexible */
+ img {
+   max-width: 100%;
+ }
+ a {
+   color: $secondcolor;
+ }
+ a:hover {
+   text-decoration: none;
+ }
+ header {
+   border-bottom: $borderbottom;
+ }
+
+.main-bkgd {
+   background: $bodybckgrcolor url("../Media/Images/gulp-bottom-beans.jpg") repeat-x bottom;
+   padding-bottom: 300px;
+ }
+
+ .main {
+   margin: 0 auto;
+   padding: 2rem;
+   display: flex;
+   flex-direction: column;
+   @include yeswrap;
+ }
